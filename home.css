@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    font-family: "Inter",sans-serif;
+    font-size: 1.5rem;
+}
+h1 h2 h3 {
+    font-family: "Poppins",sans-serif;
+}
+/* Header Section */
+.header {
+    height: 25vh;
+    background-color: rgb(3, 3, 128);
+    display: flex;
+}
+    
+    
+.header img {
+    height: 70%;
+    width: 10vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.title h1{
+    padding: 10px;
+    color: black;
+    font-family: "Poppins",sans-serif;
+    font-size: 3.5rem;
+    margin-top: 20px;
+}
+
+.title h3{
+    padding: 10px;
+    color: gray;
+    font-family: "Inter",sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Hero Section */
+.hero {
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f0ef;
+}
+
+.time-machine {
+    display: flex;
+    padding: 20px;
+}
+.time-machine p {
+    width: 50%;
+    margin-left:50px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.time-machine img {
+    width: 40%;
+    height: 50vh;
+}
+.VR img {
+    width: 40%;
+    height: 50vh;
+}
+.VR {
+    display: flex;
+    padding: 20px;
+}    
+.VR p {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 50px
+}
+/* Destinations and Meet the Team */
+.destinations {
+    background-color: #f2f0ef;
+    
+    overflow-x: hidden;
+}
+.destinations h2 {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 3rem;
+}
+.meet-the-team {
+    padding-top: 30px;
+    background-color: #f2f0ef;
+}
+.meet-the-team h2 {
+    display: flex;
+    justify-content: center;
+    
+    font-size: 3rem;
+}
+.grid {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col img {
+    width: 25vw;
+    height: 40vh;
+    margin: 30px;
+}
+.destinations img:hover {
+    box-shadow: 10px 10px 10px rgba(36, 36, 36, 0.5);
+}
+.col p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.col a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.col button {
+    width: fit-content;
+    margin-top: 10px;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 30px;
+    border-color: blue;
+    cursor: pointer;
+}
+.col button:hover {
+    background-color: rgb(0, 102, 255);
+}
+/* Footer */
+.footer {
+    background-color: gray;
+    padding-left: 20px;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+}
+.footer h4 {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}   
+.contact {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img {
+    height: 20px;
+    width: 20px;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contact span {
+    margin-left: 20px;
+}
+.phone {
+    display: flex;
+    align-items: center;
+}
+.email {
+    display: flex;
+    align-items: center;
+}
+.location {
+    display: flex;
+    align-items: center;
+}
+    
+    
+@media screen and (max-width: 720px){
+    .title h1 {
+        font-size: 2.7rem ;
+    }
+    .title h3 {
+        font-size: 1.4rem;
+    }
+    .header img {
+        height: 50%;
+        margin-top: 35px;
+    }
+    .time-machine p {
+        font-size: 0.9rem;
+    }
+    .VR p{
+        font-size: 0.9rem;
+    }
+    .time-machine img {
+        height: 40vh;
+    }
+    .VR img {
+        height: 40vh;
+    }
+    .grid {
+        flex-direction: column;
+    }
+    .col img {
+        display: flex;
+        justify-content: center;
+        height: 60vh;
+        width: 90%;
+    }
+    
+    .col p {
+        font-size: 1rem;
+    }
+    .footer {
+        padding-left: 10px;
+        padding-right: 40px;
+    }
+    .footer h4 {
+        font-size: 20px;
+    }
+    .footer span {
+        font-size: 0.8rem;
+    }
+}

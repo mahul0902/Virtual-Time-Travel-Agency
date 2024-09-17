@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+.header {
+    height: 25vh;
+    background-color: rgb(3, 3, 128);
+    display: flex;
+}
+    
+    
+.header img {
+    height: 70%;
+    width: 10vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.title h1{
+    padding: 10px;
+    color: black;
+    font-family: "Poppins",sans-serif;
+    font-size: 3.5rem;
+    margin-top: 20px;
+}
+
+.title h3{
+    padding: 10px;
+    color: gray;
+    font-family: "Inter",sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+/* Form Section */
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 3rem;
+    font-family: "Poppins",sans-serif;
+}
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 25px;
+    background-color: #f2f0ef;
+}
+
+.container {
+    display: flex;
+}
+.radio-button {
+    padding-left: 20px;
+}
+button {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: gray;
+    padding-left: 20px;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+}
+.footer h4 {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}   
+.contact {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img {
+    height: 20px;
+    width: 20px;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contact span {
+    margin-left: 20px;
+}
+.phone {
+    display: flex;
+    align-items: center;
+}
+.email {
+    display: flex;
+    align-items: center;
+}
+.location {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:720px) {
+    .title h1 {
+        font-size: 2.7rem ;
+    }
+    .title h3 {
+        font-size: 1.4rem;
+    }
+    .header img {
+        height: 50%;
+        margin-top: 35px;
+    }
+    .footer {
+        padding-left: 10px;
+        padding-right: 40px;
+    }
+    .footer h4 {
+        font-size: 20px;
+    }
+    .footer span {
+        font-size: 0.8rem;
+    }
+    .radio-button {
+        padding: 10px;
+    }
+}
